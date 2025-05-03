@@ -32,9 +32,4 @@ function M.setup()
     end
   end
 end
-function M.helper()
-  if 4 > 2 then
-    print 'Geschafft'
-  end
-end
 return M
