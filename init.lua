@@ -10,19 +10,6 @@ vim.g.have_nerd_font = true
 require('config.options').setup()
 require('config.keymaps').setup()
 require 'config.autocommands'
--- [[ Basic Autocommands ]]
---  See `:help lua-guide-autocommands`
-
--- Highlight when yanking (copying) text
---  Try it with `yap` in normal mode
---  See `:help vim.highlight.on_yank()`
-vim.api.nvim_create_autocmd('TextYankPost', {
-  desc = 'Highlight when yanking (copying) text',
-  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-})
 
 -- python eingerichtet
 vim.g.python3_host_prog = '~/.config/nvim/venv/bin/python' -- Passe diesen Pfad unbedingt an!
