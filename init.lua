@@ -9,6 +9,7 @@ vim.g.have_nerd_font = true
 
 require('config.options').setup()
 require('config.keymaps').setup()
+require 'config.autocommands'
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
